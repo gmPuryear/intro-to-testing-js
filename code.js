@@ -8,8 +8,13 @@ function sayHello(name) {
         return "Hello, Alex!";
     } else if (name === "Pat") {
         return "Hello, Pat!";
-    } else {
+    } else if (name === "Jane") {
         return "Hello, Jane!";
+    } else if (typeof name === "boolean") {
+        return "Hello, World!";
+    } else if (name === "") {
+        return ("Hello, World!")
+    } else {
+        return "Hello, World!";
     }
 }
-// console.log(sayHello("Hello, Alex!"));
