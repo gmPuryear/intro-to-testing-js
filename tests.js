@@ -42,9 +42,22 @@ describe('sayHello', function() {
     });
     it('sayHello("") should return "Hello, World!"', function() {
         expect(sayHello("")).toBe("Hello, World!");
-    })
+    });
     it('sayHello(5) should return "Hello, World!"', function() {
         expect(sayHello(5)).toBe("Hello, World!");
-    })
+    });
+})
+
+// Unit tests for isFive function
+describe('isFive should be a defined function', function() {
+    it('isFive should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('isFive should return a boolean no matter what input', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('isFive should return a boolean with ANY input', function() {
+        expect(isFive("5")).toBe(false);
+    });
 })
 

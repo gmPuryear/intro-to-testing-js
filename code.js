@@ -18,3 +18,13 @@ function sayHello(name) {
         return "Hello, World!";
     }
 }
+
+// isFive function
+function isFive(num) {
+    if (num === 5) {
+        return true;
+    } else if (typeof num === 'string') {
+        return false;
+    }
+
+}
