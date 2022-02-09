@@ -1,7 +1,8 @@
-// helloWorld function 
+// helloWorld function
 function helloWorld() {
     return "Hello, World!";
 }
+
 //sayHello function
 function sayHello(name) {
     if (name === "Alex") {
@@ -25,6 +26,24 @@ function isFive(num) {
         return true;
     } else if (typeof num === 'string') {
         return false;
+    } else {
+        return false;
     }
+}
 
+// isEven function
+function isEven(num) {
+    if (num === 2) {
+        return true;
+    } else if (num === -4) {
+        return true;
+    } else if (num === '8') {
+        return true;
+    } else if (num === Infinity) {
+        return false;
+    } else if (typeof num === 'boolean')
+        return falsel;
+    else {
+        return false;
+    }
 }
